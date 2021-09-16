@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(229, 23%, 23%);
+    background-image: url(images/bg-pattern-bottom.svg), url(images/bg-pattern-top.svg);
+    background-position: bottom 240% right -53%, top 202% left -58%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 330px;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 15px;
+    position: relative;
+}
+
+.card .background-img {
+    width: 100%;
+    height: 140px;
+}
+
+.card .background-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.card .content .profile-pic {
+    position: relative;
+    top: -53px;
+    z-index: 1;
+}
+
+.card .content .profile-pic img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.card .content h1 {
+    margin-top: -42px;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.card .content span.age {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    margin-left: 5px;
+}
+
+.card .content p {
+    line-height: 25px;
+    font-size: 15px;
+    color: hsl(227, 10%, 46%);
+}
+
+.card .content hr {
+    width: 100%;
+    opacity: 0.3;
+    margin-top: 22px;
+    color: hsl(0, 0%, 59%);
+}
+
+.card .content .stats-container {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.card .content h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card .content p.small-text {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+footer .attribution { 
+    font-size: 11px; 
+    color: #fff; 
+}
+
+footer .attribution a { 
+    color: #fff; 
+    font-weight: 700;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        background-size: 160%;
+        background-position: bottom -427% right 175%, top -458% left 180%;
+    }
+}
